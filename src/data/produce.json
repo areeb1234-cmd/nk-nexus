@@ -458,7 +458,7 @@
       "Cedar Ridge Harvest Bazaar",
       "Bayside Organic Pavilion"
     ],
-    "image": "https://images.unsplash.com/photo-1621955964441-c173e01c135b?auto=format&fit=crop&w=1200&q=85",
+    "image": "/product-images/FreshThyme2.jpg",
     "imageSource": "unsplash"
   },
   {
@@ -534,8 +534,8 @@
       "Sunburst Artisan Market",
       "Pacific Grove Farmers Collective"
     ],
-    "image": "https://images.unsplash.com/photo-1621682372775-533449e550ed?auto=format&fit=crop&w=1200&q=85",
-    "imageSource": "unsplash"
+    "image": "/product-images/fresh-mint-leaves.jpg",
+    "imageSource": "generated"
   },
   {
     "id": "prod-29",
