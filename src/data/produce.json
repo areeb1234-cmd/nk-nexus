@@ -1,0 +1,617 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Heirloom Beefsteak Tomatoes",
+    "category": "Vegetables",
+    "season": "Summer",
+    "seasonStatus": "peak",
+    "description": "Richly ribbed, deeply aromatic heirloom tomatoes packed with complex umami sweetness. Hand-picked ripe from the vine at dawn.",
+    "storageTip": "Store stem-down at room temperature; avoid refrigerator chilling to preserve delicate sugars and aromatics.",
+    "carbonImpact": "-92% vs supermarket truck freight",
+    "nutrition": "High in Lycopene, Vitamin C, Potassium",
+    "priceRange": "$4.50 / lb",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Skyline Organic Fair",
+      "Golden Gate Eco-Bazaar",
+      "Sunburst Artisan Market"
+    ],
+    "image": "/product-images/heirloom-beefsteak-tomatoes.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-2",
+    "name": "Rainbow Bunch Carrots",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "in_season",
+    "description": "Crisp purple, amber, solar yellow, and crimson carrots with lush feathery tops. Naturally sweet with an earthy crunch.",
+    "storageTip": "Snip green tops 1 inch above crown; submerge in cold water bowl or wrap in damp cloth inside crisper.",
+    "carbonImpact": "-88% vs industrial packaging",
+    "nutrition": "Beta-Carotene, Lutein, Dietary Fiber",
+    "priceRange": "$3.75 / bunch",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Old Town Meadow Guild",
+      "Pinecrest Sustainable Agora",
+      "Cedar Ridge Harvest Bazaar"
+    ],
+    "image": "/product-images/rainbow-bunch-carrots.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-3",
+    "name": "Crisp Gala Apples",
+    "category": "Fruits",
+    "season": "Autumn",
+    "seasonStatus": "in_season",
+    "description": "Orchard-fresh heirloom Gala apples featuring dense, ivory flesh with crisp snap and sweet vanilla-floral undertones.",
+    "storageTip": "Keep chilled in the refrigerator crisper drawer with high humidity; lasts 3-4 weeks.",
+    "carbonImpact": "-79% zero cold storage transport",
+    "nutrition": "Soluble Pectin, Vitamin C, Antioxidants",
+    "priceRange": "$3.20 / lb",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Old Town Meadow Guild",
+      "Timberline Hill Market",
+      "Sunburst Artisan Market"
+    ],
+    "image": "/product-images/crisp-gala-apples.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-4",
+    "name": "Wild Forest Mushrooms",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "peak",
+    "description": "Foraged chanterelles, black trumpets, and cultivated oyster clusters with rich forest earthiness and velvety texture.",
+    "storageTip": "Store loosely in a brown paper bag in refrigerator; never seal in plastic or wash until ready to sauté.",
+    "carbonImpact": "-96% wild gathered locally",
+    "nutrition": "Vitamin D, Ergothioneine, Selenium",
+    "priceRange": "$12.00 / basket",
+    "availableMarkets": [
+      "Highland Eco-Square",
+      "Timberline Hill Market",
+      "Green Valley Farmers Market"
+    ],
+    "image": "/product-images/wild-forest-mushrooms.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-5",
+    "name": "Tuscan Lacinato Kale",
+    "category": "Vegetables",
+    "season": "Winter",
+    "seasonStatus": "in_season",
+    "description": "Dark blue-green pebbled dinosaur kale with deep earthy minerality, tender leaves, and sweet finish after light frost.",
+    "storageTip": "Wrap stems in damp paper towel and enclose in reusable cloth sack; wash right before preparation.",
+    "carbonImpact": "-85% regenerative outdoor soil",
+    "nutrition": "Vitamins K, A, C, Calcium, Iron",
+    "priceRange": "$3.00 / bunch",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Pinecrest Sustainable Agora",
+      "Riverfront Farmstead Market"
+    ],
+    "image": "/product-images/tuscan-lacinato-kale.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-6",
+    "name": "Sweet Japanese Sweet Potatoes",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "peak",
+    "description": "Murasaki and Satsumaimo sweet potatoes with burgundy skin and golden cream flesh that caramelizes to honey sweetness.",
+    "storageTip": "Keep in a cool, dark, well-ventilated pantry; never store in the refrigerator.",
+    "carbonImpact": "-90% zero chemical curing",
+    "nutrition": "Potassium, Vitamin B6, Complex Fiber",
+    "priceRange": "$3.40 / lb",
+    "availableMarkets": [
+      "Sunburst Artisan Market",
+      "Pinecrest Sustainable Agora",
+      "Green Valley Farmers Market"
+    ],
+    "image": "/product-images/sweet-japanese-sweet-potatoes.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-7",
+    "name": "Meyer Lemons",
+    "category": "Fruits",
+    "season": "Winter",
+    "seasonStatus": "in_season",
+    "description": "A cross between a true lemon and mandarin orange. Thin fragrant peel, low acidity, and floral herbal sweetness.",
+    "storageTip": "Room temperature for 1 week; refrigerate in a sealed crisper pouch for up to 1 month.",
+    "carbonImpact": "-94% coastal microclimate grown",
+    "nutrition": "Vitamin C, Citric Acid, Limonene",
+    "priceRange": "$4.00 / bag",
+    "availableMarkets": [
+      "Bayside Organic Pavilion",
+      "Pacific Grove Farmers Collective",
+      "Riverfront Farmstead Market"
+    ],
+    "image": "/product-images/meyer-lemons.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-8",
+    "name": "Fresh Genovese Basil",
+    "category": "Herbs",
+    "season": "Summer",
+    "seasonStatus": "in_season",
+    "description": "Lush emerald leaves with potent clove-peppery essential oils, cut minutes before market opening.",
+    "storageTip": "Trim stems and place like flowers in a glass of water on kitchen counter; never refrigerate.",
+    "carbonImpact": "-98% zero plastic clamshell",
+    "nutrition": "Eugenol, Vitamin K, Flavonoids",
+    "priceRange": "$2.75 / bunch",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Golden Gate Eco-Bazaar",
+      "Oakwood Community Produce Yard"
+    ],
+    "image": "https://images.unsplash.com/photo-1603397368998-a33d3ebc8a14?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-9",
+    "name": "Black Mission Figs",
+    "category": "Fruits",
+    "season": "Summer",
+    "seasonStatus": "peak",
+    "description": "Decadently jammy purple-black figs with pink interior, bursting with rich honeyed berry sweetness.",
+    "storageTip": "Consume within 48 hours; chill on a plate in single layer if keeping for 2-3 days.",
+    "carbonImpact": "-89% tree-ripened local orchard",
+    "nutrition": "Potassium, Calcium, Dietary Fiber",
+    "priceRange": "$6.00 / pint",
+    "availableMarkets": [
+      "Skyline Organic Fair",
+      "Green Valley Farmers Market",
+      "Golden Gate Eco-Bazaar"
+    ],
+    "image": "/product-images/black-mission-figs.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-10",
+    "name": "English Cucumbers",
+    "category": "Vegetables",
+    "season": "Summer",
+    "seasonStatus": "in_season",
+    "description": "Thin-skinned seedless cucumbers with refreshing coolness, tender skin that requires no peeling.",
+    "storageTip": "Keep dry and store in warmest part of refrigerator (top shelf) to avoid cold pit damage.",
+    "carbonImpact": "-84% unwrapped eco-harvest",
+    "nutrition": "Hydration, Silica, Vitamin K",
+    "priceRange": "$2.50 / each",
+    "availableMarkets": [
+      "Riverfront Farmstead Market",
+      "Oakwood Community Produce Yard",
+      "Bayside Organic Pavilion"
+    ],
+    "image": "/product-images/english-cucumbers.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-11",
+    "name": "Sugar Snap Peas",
+    "category": "Vegetables",
+    "season": "Spring",
+    "seasonStatus": "coming_soon",
+    "description": "Thick-walled crunchy pods bursting with sweet botanical juice. Eat raw, steamed, or tossed into grain salads.",
+    "storageTip": "Store unwashed in a breathable mesh bag in the crisper drawer for up to 5 days.",
+    "carbonImpact": "-91% nitrogen fixing soil roots",
+    "nutrition": "Plant Protein, Vitamin C, Folate",
+    "priceRange": "$4.80 / lb",
+    "availableMarkets": [
+      "Oakwood Community Produce Yard",
+      "Riverfront Farmstead Market",
+      "Highland Eco-Square"
+    ],
+    "image": "/product-images/sugar-snap-peas.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-12",
+    "name": "Golden Beets",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "in_season",
+    "description": "Radiant yellow beets with a mild, sweet, non-earthy flavor profile that will not bleed magenta in salads.",
+    "storageTip": "Remove green tops and store firm roots in perforated produce bag for up to 3 weeks.",
+    "carbonImpact": "-87% untreated soil crop",
+    "nutrition": "Betalains, Nitrates, Folate",
+    "priceRange": "$3.50 / bunch",
+    "availableMarkets": [
+      "Highland Eco-Square",
+      "Pinecrest Sustainable Agora",
+      "Old Town Meadow Guild"
+    ],
+    "image": "/product-images/golden-beets.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-13",
+    "name": "Kabocha Squash",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "peak",
+    "description": "Japanese heirloom pumpkin with deep forest rind and dense, chestnut-flavored golden flesh perfect for roasting.",
+    "storageTip": "Cured winter squash keeps at cool room temperature (50-60°F) for up to 3 months.",
+    "carbonImpact": "-95% long shelf life zero chilling",
+    "nutrition": "Carotenoids, Vitamin A, Fiber",
+    "priceRange": "$2.80 / lb",
+    "availableMarkets": [
+      "Sunburst Artisan Market",
+      "Pinecrest Sustainable Agora",
+      "Timberline Hill Market"
+    ],
+    "image": "/product-images/kabocha-squash.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-14",
+    "name": "Valencia Oranges",
+    "category": "Fruits",
+    "season": "Summer",
+    "seasonStatus": "in_season",
+    "description": "Sun-drenched juice oranges with vibrant citrus perfume, thin skin, and unparalleled sugar-to-acid balance.",
+    "storageTip": "Store at cool room temperature for up to 10 days, or refrigerated for up to 3 weeks.",
+    "carbonImpact": "-82% sun-ripened orchard",
+    "nutrition": "High Vitamin C, Hesperidin",
+    "priceRange": "$2.90 / lb",
+    "availableMarkets": [
+      "Skyline Organic Fair",
+      "Bayside Organic Pavilion",
+      "Pacific Grove Farmers Collective"
+    ],
+    "image": "/product-images/valencia-oranges.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-15",
+    "name": "Artisanal Goat Chevre",
+    "category": "Dairy & Pantry",
+    "season": "Year-Round",
+    "seasonStatus": "in_season",
+    "description": "Pillow-soft fresh goat cheese rolled in wild culinary herbs, crafted from pasture-grazed heritage goats.",
+    "storageTip": "Keep tightly wrapped in parchment paper and refrigerated; best enjoyed within 10 days of opening.",
+    "carbonImpact": "-65% rotational grazing herd",
+    "nutrition": "Digestible Casein, Protein, Calcium",
+    "priceRange": "$7.50 / wheel",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Bayside Organic Pavilion",
+      "Cedar Ridge Harvest Bazaar",
+      "Skyline Organic Fair"
+    ],
+    "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-16",
+    "name": "Wild Mountain Lavender Honey",
+    "category": "Artisanal Goods",
+    "season": "Year-Round",
+    "seasonStatus": "peak",
+    "description": "Raw, unheated floral nectar harvested from mountain ridge apiaries. Delicate herbal notes and crystalline texture.",
+    "storageTip": "Keep in a sealed glass jar at room temperature. If crystallization occurs, gently warm jar in warm water bath.",
+    "carbonImpact": "-99% native pollinator support",
+    "nutrition": "Live Enzymes, Phenolic Acids",
+    "priceRange": "$14.00 / 12oz jar",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Highland Eco-Square",
+      "Old Town Meadow Guild",
+      "Valley Forge Botanical Market"
+    ],
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-17",
+    "name": "Cultured Farmstead Butter",
+    "category": "Dairy & Pantry",
+    "season": "Year-Round",
+    "seasonStatus": "in_season",
+    "description": "Golden churned butter cultured with live probiotic flora for a tangy, rich, European-style 84% butterfat richness.",
+    "storageTip": "Keep refrigerated; can remain at room temperature in a butter crock for 7 days of spreadability.",
+    "carbonImpact": "-70% small batch pasture churned",
+    "nutrition": "Fat-Soluble Vitamins A & K2",
+    "priceRange": "$6.50 / roll",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Pinecrest Sustainable Agora",
+      "Oakwood Community Produce Yard"
+    ],
+    "image": "https://images.unsplash.com/photo-1608452964552-6e6b4fdc1dca?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-18",
+    "name": "Organic Rosemary Sprigs",
+    "category": "Herbs",
+    "season": "Year-Round",
+    "seasonStatus": "in_season",
+    "description": "Piney, resinous perennial rosemary needles harvested from maritime hillside bushes for savory roasted vegetable dishes.",
+    "storageTip": "Wrap in slightly damp paper towel and seal in a produce container in the refrigerator for up to 3 weeks.",
+    "carbonImpact": "-98% perennial crop zero tilling",
+    "nutrition": "Rosmarinic Acid, Carnosic Acid",
+    "priceRange": "$2.50 / bunch",
+    "availableMarkets": [
+      "Highland Eco-Square",
+      "Valley Forge Botanical Market",
+      "Cedar Ridge Harvest Bazaar"
+    ],
+    "image": "https://images.unsplash.com/photo-1515586000433-45406d8e6662?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-19",
+    "name": "Spring Strawberries",
+    "category": "Fruits",
+    "season": "Spring",
+    "seasonStatus": "coming_soon",
+    "description": "Fragrant Albion and Seascape strawberries bred for concentrated sweetness and bright ruby-red interior flesh.",
+    "storageTip": "Do not wash until ready to eat; store single layer with a paper towel in a breathable container.",
+    "carbonImpact": "-91% no chemical ripening agents",
+    "nutrition": "Anthocyanins, Vitamin C, Manganese",
+    "priceRange": "$5.50 / basket",
+    "availableMarkets": [
+      "Bayside Organic Pavilion",
+      "Pacific Grove Farmers Collective",
+      "Riverfront Farmstead Market"
+    ],
+    "image": "/product-images/spring-strawberries.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-20",
+    "name": "Crisp Romanesco Broccoli",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "peak",
+    "description": "Hypnotic logarithmic fractal spirals with a nutty, sweeter nuance than traditional broccoli or cauliflower.",
+    "storageTip": "Refrigerate in a loose produce bag; best prepared within 5 days of harvest.",
+    "carbonImpact": "-86% direct field to table",
+    "nutrition": "Glucosinolates, Vitamin C, Zinc",
+    "priceRange": "$4.20 / head",
+    "availableMarkets": [
+      "Cedar Ridge Harvest Bazaar",
+      "Green Valley Farmers Market",
+      "Pinecrest Sustainable Agora"
+    ],
+    "image": "/product-images/crisp-romanesco-broccoli.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-21",
+    "name": "Purple Asparagus",
+    "category": "Vegetables",
+    "season": "Spring",
+    "seasonStatus": "coming_soon",
+    "description": "Heirloom violet spears with 20% higher natural sugar content than green varieties and tender edible stalks.",
+    "storageTip": "Stand upright with bottoms submerged in 1 inch of water in refrigerator, loosely tented with a bag.",
+    "carbonImpact": "-93% perennial root bed",
+    "nutrition": "Anthocyanins, Rutin, Folate",
+    "priceRange": "$5.00 / bunch",
+    "availableMarkets": [
+      "Highland Eco-Square",
+      "Old Town Meadow Guild",
+      "Green Valley Farmers Market"
+    ],
+    "image": "/product-images/purple-asparagus.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-22",
+    "name": "Microgreen Medley",
+    "category": "Vegetables",
+    "season": "Year-Round",
+    "seasonStatus": "in_season",
+    "description": "Spicy radish, red cabbage, broccoli, and pea shoot microgreens packed with up to 40x the nutrient density of mature plants.",
+    "storageTip": "Store chilled between dry paper towels; lasts up to 10 days in sealed container.",
+    "carbonImpact": "-97% indoor vertical solar growth",
+    "nutrition": "Supercharged Sulforaphane & Vitamins",
+    "priceRange": "$4.00 / container",
+    "availableMarkets": [
+      "Golden Gate Eco-Bazaar",
+      "Valley Forge Botanical Market",
+      "Riverfront Farmstead Market",
+      "Highland Eco-Square"
+    ],
+    "image": "/product-images/microgreen-medley.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-23",
+    "name": "Crimson Radishes",
+    "category": "Vegetables",
+    "season": "Spring",
+    "seasonStatus": "in_season",
+    "description": "Crisp globe radishes with peppery snap, tender green tops great for making garden pestos.",
+    "storageTip": "Cut tops off and store radishes in cold water jar in fridge for crispness that lasts 2 weeks.",
+    "carbonImpact": "-90% fast 30-day crop cycle",
+    "nutrition": "Sulforaphane, Potassium, Vitamin C",
+    "priceRange": "$2.50 / bunch",
+    "availableMarkets": [
+      "Sunburst Artisan Market",
+      "Golden Gate Eco-Bazaar",
+      "Oakwood Community Produce Yard"
+    ],
+    "image": "/product-images/crimson-radishes.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-24",
+    "name": "Fresh Thyme Sprigs",
+    "category": "Herbs",
+    "season": "Year-Round",
+    "seasonStatus": "in_season",
+    "description": "French and English culinary thyme with tiny aromatic leaves and woodsy, lemon-clove aromatic warmth.",
+    "storageTip": "Refrigerate rolled in damp cloth inside an airtight container for up to 2 weeks.",
+    "carbonImpact": "-99% direct garden harvest",
+    "nutrition": "Thymol Essential Oil, Iron",
+    "priceRange": "$2.50 / bundle",
+    "availableMarkets": [
+      "Valley Forge Botanical Market",
+      "Cedar Ridge Harvest Bazaar",
+      "Bayside Organic Pavilion"
+    ],
+    "image": "https://images.unsplash.com/photo-1621955964441-c173e01c135b?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-25",
+    "name": "Organic Hass Avocados",
+    "category": "Fruits",
+    "season": "Summer",
+    "seasonStatus": "in_season",
+    "description": "Coastal-grown rich Hass avocados with buttery nutty flesh, creamy texture, and elevated monounsaturated oils.",
+    "storageTip": "Ripen at room temperature until gently yielding; once ripe, refrigerate to suspend ripening for up to 5 days.",
+    "carbonImpact": "-88% domestic coastal agroforestry",
+    "nutrition": "Healthy Fats, Oleic Acid, Potassium",
+    "priceRange": "$5.00 / 3 pack",
+    "availableMarkets": [
+      "Pacific Grove Farmers Collective",
+      "Cedar Ridge Harvest Bazaar",
+      "Skyline Organic Fair"
+    ],
+    "image": "/product-images/organic-hass-avocados.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-26",
+    "name": "Concord Grapes",
+    "category": "Fruits",
+    "season": "Autumn",
+    "seasonStatus": "peak",
+    "description": "Deep indigo heirloom slip-skin grapes with quintessential rich grape jelly aroma and bold tart-sweet flavor.",
+    "storageTip": "Store unwashed in original ventilated container in the refrigerator crisper for up to 10 days.",
+    "carbonImpact": "-85% heritage hillside vineyards",
+    "nutrition": "Resveratrol, Flavonols, Vitamin K",
+    "priceRange": "$5.50 / basket",
+    "availableMarkets": [
+      "Skyline Organic Fair",
+      "Green Valley Farmers Market",
+      "Old Town Meadow Guild"
+    ],
+    "image": "/product-images/concord-grapes.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-27",
+    "name": "Golden Honeycomb",
+    "category": "Artisanal Goods",
+    "season": "Year-Round",
+    "seasonStatus": "peak",
+    "description": "Pure beeswax comb dripping with golden clover and wildflower honey. Chewable, 100% natural and unrefined.",
+    "storageTip": "Store at ambient room temperature in an airtight box; honey never spoils naturally.",
+    "carbonImpact": "-99% pristine zero processing",
+    "nutrition": "Propolis, Raw Pollen, Antioxidants",
+    "priceRange": "$16.00 / square",
+    "availableMarkets": [
+      "Old Town Meadow Guild",
+      "Highland Eco-Square",
+      "Sunburst Artisan Market"
+    ],
+    "image": "https://images.unsplash.com/photo-1473923377535-0002805f57e5?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-28",
+    "name": "Fresh Mint Leaves",
+    "category": "Herbs",
+    "season": "Summer",
+    "seasonStatus": "in_season",
+    "description": "Spearmint and Moroccan mint with invigorating menthol essential oils. Perfect for infusions, salads, and mocktails.",
+    "storageTip": "Store like fresh flowers in a glass of water on counter, or gently wrapped in moist towel in fridge.",
+    "carbonImpact": "-98% zero transport packaging",
+    "nutrition": "Menthol, Rosmarinic Acid, Carotenes",
+    "priceRange": "$2.25 / bunch",
+    "availableMarkets": [
+      "Valley Forge Botanical Market",
+      "Sunburst Artisan Market",
+      "Pacific Grove Farmers Collective"
+    ],
+    "image": "https://images.unsplash.com/photo-1621682372775-533449e550ed?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  },
+  {
+    "id": "prod-29",
+    "name": "Delicata Squash",
+    "category": "Vegetables",
+    "season": "Autumn",
+    "seasonStatus": "peak",
+    "description": "Striped oblong squash with edible skin that caramelizes like candied sweet potatoes when sliced and roasted.",
+    "storageTip": "Keep dry in a cool room (55°F) for up to 6 weeks. No need to peel prior to cooking.",
+    "carbonImpact": "-92% heirloom field harvested",
+    "nutrition": "Beta-Carotene, Fiber, Vitamin C",
+    "priceRange": "$2.90 / lb",
+    "availableMarkets": [
+      "Cedar Ridge Harvest Bazaar",
+      "Timberline Hill Market",
+      "Green Valley Farmers Market"
+    ],
+    "image": "/product-images/delicata-squash.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-30",
+    "name": "Spotted Watermelon",
+    "category": "Fruits",
+    "season": "Summer",
+    "seasonStatus": "peak",
+    "description": "Heirloom Moon and Stars yellow and crimson fleshed watermelon with refreshing crisp crunch and high brix sweetness.",
+    "storageTip": "Whole melons keep at room temp for 7-10 days; once sliced, cover tightly and refrigerate.",
+    "carbonImpact": "-88% rain-watered river bottom soil",
+    "nutrition": "Citrulline, Lycopene, Hydration",
+    "priceRange": "$7.00 / melon",
+    "availableMarkets": [
+      "Green Valley Farmers Market",
+      "Skyline Organic Fair",
+      "Bayside Organic Pavilion"
+    ],
+    "image": "/product-images/spotted-watermelon.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-31",
+    "name": "Baby Arugula",
+    "category": "Vegetables",
+    "season": "Spring",
+    "seasonStatus": "in_season",
+    "description": "Tender young wild arugula leaves with an appetizing peppery mustard bite, harvested in cool dawn hours.",
+    "storageTip": "Keep chilled in a breathable container with a dry cloth to prevent moisture build-up.",
+    "carbonImpact": "-95% field harvested dawn delivery",
+    "nutrition": "Nitrates, Folate, Vitamin K",
+    "priceRange": "$3.50 / bag",
+    "availableMarkets": [
+      "Bayside Organic Pavilion",
+      "Riverfront Farmstead Market",
+      "Pacific Grove Farmers Collective"
+    ],
+    "image": "/product-images/baby-arugula.jpg",
+    "imageSource": "generated"
+  },
+  {
+    "id": "prod-32",
+    "name": "Farmhouse Sourdough Bread",
+    "category": "Artisanal Goods",
+    "season": "Year-Round",
+    "seasonStatus": "in_season",
+    "description": "Slow 36-hour cold fermented bread baked in wood-fired hearth ovens using stoneground whole organic flours.",
+    "storageTip": "Store cut-side down on a wooden cutting board or in a linen bread bag; never refrigerate.",
+    "carbonImpact": "-75% locally milled organic heritage grains",
+    "nutrition": "Natural Probiotics, Complex Carbs",
+    "priceRange": "$8.50 / loaf",
+    "availableMarkets": [
+      "Old Town Meadow Guild",
+      "Timberline Hill Market",
+      "Bayside Organic Pavilion",
+      "Green Valley Farmers Market"
+    ],
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85",
+    "imageSource": "unsplash"
+  }
+]

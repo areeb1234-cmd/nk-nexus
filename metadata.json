@@ -1,0 +1,8 @@
+{
+  "name": "FreshFind – Fresh All Along",
+  "description": "Discover local farmers markets and seasonal harvest with cinematic scroll-driven video scenes, heirloom guides, and real-time community radar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

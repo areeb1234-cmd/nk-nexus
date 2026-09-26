@@ -1,0 +1,285 @@
+{
+  "greeting": "Hello! I am your FreshFind Botanical Guide. I can help you locate open markets, discover in-season produce, check stall schedules, or plan your weekend basket. What are you looking for today?",
+  "suggestedPrompts": [
+    "What can you help me with?",
+    "Where can I find tomatoes?",
+    "When is Green Valley Market open?",
+    "Which markets are open Saturday?",
+    "What is in season right now?",
+    "How do I open a Produce Guide?"
+  ],
+  "intents": [
+    {
+      "id": "intent-tomatoes",
+      "keywords": [
+        "tomato",
+        "tomatoes",
+        "beefsteak",
+        "heirloom"
+      ],
+      "response": "Fresh heirloom and beefsteak tomatoes are available right now at Green Valley Farmers Market, Skyline Organic Fair, and Golden Gate Eco-Bazaar! They are at peak ripeness.",
+      "action": {
+        "label": "View Heirloom Tomatoes",
+        "link": "/produce"
+      }
+    },
+    {
+      "id": "intent-green-valley",
+      "keywords": [
+        "green valley",
+        "green valley market"
+      ],
+      "response": "Green Valley Farmers Market operates on Wednesday (08:00 - 14:00), Saturday (07:30 - 15:00), and Sunday (08:30 - 14:30) at 142 Grand Orchard Promenade in Downtown.",
+      "action": {
+        "label": "Open Green Valley Market Guide",
+        "link": "/market/green-valley-farmers-market"
+      }
+    },
+    {
+      "id": "intent-saturday-markets",
+      "keywords": [
+        "saturday",
+        "weekend",
+        "sat"
+      ],
+      "response": "On Saturdays, multiple vibrant markets are open: Green Valley Farmers Market, Bayside Organic Pavilion, Old Town Meadow Guild, Pacific Grove Collective, Oakwood Community Yard, Timberline Hill, and Golden Gate Eco-Bazaar.",
+      "action": {
+        "label": "Explore Saturday Markets",
+        "link": "/markets?day=Saturday"
+      }
+    },
+    {
+      "id": "intent-sunday-markets",
+      "keywords": [
+        "sunday",
+        "sun"
+      ],
+      "response": "On Sundays, you can visit Green Valley Farmers Market, Highland Eco-Square, Sunburst Artisan Market, Old Town Meadow Guild, Valley Forge Botanical Market, Pinecrest Sustainable Agora, and Timberline Hill.",
+      "action": {
+        "label": "Explore Sunday Markets",
+        "link": "/markets?day=Sunday"
+      }
+    },
+    {
+      "id": "intent-herbs",
+      "keywords": [
+        "herb",
+        "herbs",
+        "basil",
+        "rosemary",
+        "thyme",
+        "mint"
+      ],
+      "response": "You can find freshly clipped organic Genovese basil, rosemary, culinary thyme, and mint leaves at Valley Forge Botanical Market, Highland Eco-Square, and Green Valley Farmers Market.",
+      "action": {
+        "label": "Browse Herbs & Botanicals",
+        "link": "/produce?category=Herbs"
+      }
+    },
+    {
+      "id": "intent-seasonal",
+      "keywords": [
+        "seasonal",
+        "season",
+        "autumn",
+        "fall",
+        "spring",
+        "summer",
+        "winter",
+        "in season",
+        "harvest"
+      ],
+      "response": "Our dynamic seasonal calendar tracks peak harvests! Autumn spotlights Gala apples, rainbow carrots, wild forest mushrooms, kabocha squash, and crisp Romanesco broccoli.",
+      "action": {
+        "label": "View Seasonal Guide",
+        "link": "/seasonal"
+      }
+    },
+    {
+      "id": "intent-nearby-location",
+      "keywords": [
+        "near me",
+        "nearby",
+        "location",
+        "closest",
+        "where",
+        "map",
+        "gps",
+        "distance"
+      ],
+      "response": "Use the 'Use My Location' button on our Find a Market bar to calculate real-time driving/walking proximity to all 14 regional farmers markets using browser GPS!",
+      "action": {
+        "label": "Find Markets Near Me",
+        "link": "/markets"
+      }
+    },
+    {
+      "id": "intent-hours-open-now",
+      "keywords": [
+        "hours",
+        "open now",
+        "timing",
+        "schedule",
+        "when",
+        "today"
+      ],
+      "response": "Our live system constantly reads your current device time and checks against every market's weekly timetable to highlight whether a market is OPEN NOW, OPEN SOON, or CLOSED.",
+      "action": {
+        "label": "Check Live Market Hours",
+        "link": "/markets"
+      }
+    },
+    {
+      "id": "intent-bookmarks-export",
+      "keywords": [
+        "bookmark",
+        "favorite",
+        "save",
+        "export",
+        "notes",
+        "list"
+      ],
+      "response": "You can heart any market or produce item to save it into 'My Fresh Finds'. You can also attach private session notes and export your customized market itinerary as a formatted download file!",
+      "action": {
+        "label": "Open My Fresh Finds",
+        "link": "/bookmarks"
+      }
+    },
+    {
+      "id": "intent-organic-standards",
+      "keywords": [
+        "organic",
+        "certified",
+        "pesticide",
+        "sustainable",
+        "regenerative",
+        "eco"
+      ],
+      "response": "Every vendor listed on FreshFind undergoes community verification: zero synthetic pesticides, water conservation audits, non-GMO heirloom seed preference, and transparent carbon footprints.",
+      "action": {
+        "label": "Read Our Sustainability Story",
+        "link": "/about"
+      }
+    },
+    {
+      "id": "intent-contact",
+      "keywords": [
+        "contact",
+        "support",
+        "email",
+        "phone",
+        "help",
+        "reach"
+      ],
+      "response": "Need assistance or interested in listing your community market? You can reach the FreshFind team at hello@freshfind.green or visit our dedicated contact hub.",
+      "action": {
+        "label": "Contact FreshFind Team",
+        "link": "/contact"
+      }
+    },
+    {
+      "id": "intent-help",
+      "keywords": [
+        "what can you do",
+        "help me",
+        "help",
+        "what do you know",
+        "botanical guide"
+      ],
+      "response": "I can answer questions about market hours, Saturday or Sunday openings, nearby markets, seasonal produce, herbs, sustainability, Fresh Finds bookmarks, and the Produce Guide. Ask a specific question and I\u2019ll point you to the right section.",
+      "actions": [
+        {
+          "label": "Browse Markets",
+          "link": "/markets"
+        },
+        {
+          "label": "Open Produce Guide",
+          "link": "/produce"
+        },
+        {
+          "label": "View Seasonal Guide",
+          "link": "/seasonal"
+        }
+      ]
+    },
+    {
+      "id": "intent-produce-guide",
+      "keywords": [
+        "produce guide",
+        "guide",
+        "storage",
+        "nutrition",
+        "how do i open a produce guide",
+        "production guide",
+        "produce popup"
+      ],
+      "response": "Open any produce card to launch its full Produce Guide. You\u2019ll see the market price range, storage guidance, nutrition notes, local impact, regional markets, and a simple production guide explaining cultivation, harvest, and market handling.",
+      "action": {
+        "label": "Open Produce Guide",
+        "link": "/produce"
+      }
+    },
+    {
+      "id": "intent-basket",
+      "keywords": [
+        "basket",
+        "fresh finds",
+        "my fresh finds",
+        "shopping plan",
+        "itinerary"
+      ],
+      "response": "Use the heart button on markets and produce to build your My Fresh Finds basket. You can add private notes and export the finished itinerary from the basket page.",
+      "action": {
+        "label": "Open My Fresh Finds",
+        "link": "/bookmarks"
+      }
+    },
+    {
+      "id": "intent-grower",
+      "keywords": [
+        "grower",
+        "farmer",
+        "sell produce",
+        "list my farm",
+        "vendor",
+        "stall"
+      ],
+      "response": "FreshFind\u2019s grower route is designed for farms, orchards, apiaries, and small-batch market stalls that want to be discoverable by local shoppers.",
+      "action": {
+        "label": "Contact FreshFind",
+        "link": "/contact"
+      }
+    },
+    {
+      "id": "intent-about",
+      "keywords": [
+        "about freshfind",
+        "why freshfind",
+        "platform story",
+        "mission"
+      ],
+      "response": "FreshFind is a lightweight community discovery platform focused on local markets, seasonal produce, regenerative growers, and privacy-first client-side features.",
+      "action": {
+        "label": "Read About FreshFind",
+        "link": "/about"
+      }
+    }
+  ],
+  "fallback": {
+    "response": "I didn't quite catch that specific query, but I can help you find fresh produce, open market hours, seasonal calendars, or location-based recommendations. Try one of these quick links:",
+    "actions": [
+      {
+        "label": "Browse All Markets",
+        "link": "/markets"
+      },
+      {
+        "label": "Explore Produce Guide",
+        "link": "/produce"
+      },
+      {
+        "label": "Seasonal Picks",
+        "link": "/seasonal"
+      }
+    ]
+  }
+}

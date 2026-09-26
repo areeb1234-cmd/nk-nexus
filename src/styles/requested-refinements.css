@@ -1,0 +1,931 @@
+/* ==========================================================================
+   FreshFind - Requested UI Refinements
+   Loaded last so the existing design system remains unchanged underneath.
+   ========================================================================== */
+
+/* Desktop navbar: icon first; reveal the existing label only on hover/focus. */
+@media (min-width: 769px) {
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-link {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: relative;
+    color: #D8F3DC;
+    transition: background-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  .nav-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 180ms ease;
+  }
+
+  .nav-link-label {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translate(-50%, -4px) scale(0.96);
+    transform-origin: top center;
+    padding: 6px 10px;
+    border-radius: 9px;
+    background: rgba(3, 17, 10, 0.96);
+    color: #E9FFF0;
+    border: 1px solid rgba(82, 183, 136, 0.28);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    font-size: 0.72rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+    z-index: 30;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #4ADE80;
+    background: rgba(82, 183, 136, 0.14);
+    box-shadow: inset 0 0 0 1px rgba(82, 183, 136, 0.18), 0 8px 20px rgba(0, 0, 0, 0.14);
+  }
+
+  .nav-link:hover {
+    transform: translateY(-1px);
+  }
+
+  .nav-link:hover .nav-link-icon {
+    transform: scale(1.06);
+  }
+
+  .nav-link:hover .nav-link-label,
+  .nav-link:focus-visible .nav-link-label {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0) scale(1);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Hero video uses the uploaded 16:9 MP4 while preserving the existing card. */
+.hero-video-card {
+  isolation: isolate;
+}
+
+.hero-showcase-video,
+.hero-showcase-video-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.hero-showcase-video {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.06) contrast(1.02) brightness(0.66);
+  transform: scale(1.01);
+}
+
+.hero-showcase-video-overlay {
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(4, 18, 10, 0.64) 0%, rgba(4, 18, 10, 0.28) 46%, rgba(4, 18, 10, 0.72) 100%),
+    linear-gradient(90deg, rgba(4, 18, 10, 0.32) 0%, rgba(4, 18, 10, 0.06) 55%, rgba(4, 18, 10, 0.34) 100%);
+}
+
+/* Mobile menu keeps the original text labels and simply adds the new icons. */
+@media (max-width: 768px) {
+  .mobile-nav-panel a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-link-label {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .nav-link-icon,
+  .nav-link-label {
+    transition: none !important;
+  }
+
+  .hero-showcase-video {
+    display: none;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Latest visual refinement: hero background video + fruit community panel.
+   These are additive and do not alter existing component functionality.
+   -------------------------------------------------------------------------- */
+
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: clamp(680px, 86vh, 900px);
+  background: transparent !important;
+}
+
+.hero-section-content {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-section-background-video,
+.hero-section-background-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hero-section-background-video {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.08) contrast(1.03) brightness(0.62);
+  transform: scale(1.02);
+}
+
+.hero-section-background-overlay {
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(4, 16, 9, 0.48) 0%, rgba(4, 16, 9, 0.25) 40%, rgba(4, 16, 9, 0.78) 100%),
+    linear-gradient(90deg, rgba(4, 16, 9, 0.64) 0%, rgba(4, 16, 9, 0.18) 56%, rgba(4, 16, 9, 0.42) 100%);
+}
+
+.community-pulse-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.community-pulse-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(82, 183, 136, 0.12), transparent 38%),
+    linear-gradient(180deg, rgba(4, 16, 9, 0.1), rgba(4, 16, 9, 0.38));
+}
+
+.community-pulse-content {
+  position: relative;
+  z-index: 1;
+}
+
+.community-pulse-section .section-header-center {
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.68);
+}
+
+.community-pulse-section .grid-3 > div {
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.organizer-preview-card {
+  color: #FFFFFF;
+}
+
+.organizer-preview-card > div:first-child {
+  border-bottom-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+.organizer-preview-card .ready-to-download {
+  color: #74C69D;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .hero-section-background-video {
+    object-position: center center;
+    transform: scale(1.08);
+    filter: saturate(1.03) contrast(1.02) brightness(0.56);
+  }
+
+  .community-pulse-section {
+    background-position: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-section-background-video {
+    display: none;
+  }
+
+  .hero-section {
+    background:
+      radial-gradient(circle at 50% 10%, rgba(82, 183, 136, 0.08), transparent 35%),
+      #041009 !important;
+  }
+}
+
+
+/* Featured Farmers Markets only: remove the shared white section background
+   while preserving the page-level cinematic scroll animation behind it. */
+#featured-markets-section.section-subtle {
+  background: transparent !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* ==========================================================================\n   VVIP HOME HEADER + 3D MARKET ORBIT\n   ========================================================================== */
+
+.hero-section-background-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  filter: saturate(1.04) contrast(1.03) brightness(.58);
+  pointer-events: none;
+}
+
+.hero-section-background-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 78% 34%, rgba(82,183,136,.14), transparent 34%);
+}
+
+/* Keep desktop navigation visible so the first screen reads immediately. */
+@media (min-width: 769px) {
+  .nav-links {
+    gap: 6px !important;
+    flex-wrap: nowrap;
+  }
+
+  .nav-link {
+    width: auto !important;
+    min-width: 74px;
+    height: 42px;
+    padding: 0 11px !important;
+    gap: 7px;
+    border-radius: 12px;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .nav-link-label {
+    position: static !important;
+    transform: none !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    font-size: .78rem !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .nav-link:hover .nav-link-label,
+  .nav-link:focus-visible .nav-link-label {
+    transform: none !important;
+  }
+
+  .navbar-inner {
+    gap: 16px !important;
+  }
+
+  .nav-brand {
+    min-width: 224px !important;
+  }
+}
+
+/* Premium 3D market carousel. */
+.hero-orbit-showcase {
+  min-height: 560px !important;
+  padding: 24px !important;
+}
+
+.hero-showcase-topline {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(149,213,178,.13);
+}
+
+.hero-showcase-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.hero-showcase-brand-mark {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(116,198,157,.60);
+  box-shadow: 0 0 18px rgba(82,183,136,.22);
+}
+
+.hero-showcase-brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-showcase-brand-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.hero-showcase-brand-title strong {
+  color: #fff;
+  font-size: .98rem;
+  letter-spacing: -.02em;
+}
+
+.hero-showcase-brand-title span {
+  border: 1px solid rgba(116,198,157,.28);
+  border-radius: 999px;
+  padding: 2px 7px;
+  color: #95D5B2;
+  background: rgba(82,183,136,.09);
+  font-size: .52rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.hero-showcase-brand p {
+  margin: 3px 0 0;
+  color: #9FC8AE;
+  font-size: .68rem;
+}
+
+.hero-showcase-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  border: 1px solid rgba(116,198,157,.18);
+  border-radius: 999px;
+  background: rgba(2,15,9,.44);
+  color: #B7E4C7;
+  font-size: .64rem;
+  font-weight: 800;
+}
+
+.hero-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #52B788;
+  box-shadow: 0 0 0 4px rgba(82,183,136,.10), 0 0 12px rgba(82,183,136,.45);
+}
+
+.hero-orbit-copy {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 16px 0 10px;
+}
+
+.hero-orbit-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: #74C69D;
+  background: rgba(82,183,136,.08);
+  border: 1px solid rgba(116,198,157,.20);
+  font-size: .61rem;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.hero-orbit-copy h3 {
+  margin: 10px 0 7px;
+  color: #fff;
+  font-size: clamp(1.45rem, 2.3vw, 1.95rem);
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+
+.hero-orbit-copy h3 span {
+  color: #74C69D;
+}
+
+.hero-orbit-copy p {
+  margin: 0 auto;
+  max-width: 450px;
+  color: #BBDDC8;
+  font-size: .74rem;
+  line-height: 1.55;
+}
+
+.hero-orbit-stage-shell {
+  position: relative;
+  z-index: 5;
+  height: 270px;
+  margin: 0 -4px;
+  perspective: 1200px;
+}
+
+.hero-orbit-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 220ms ease-out;
+}
+
+.hero-orbit-glow {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: 220px;
+  height: 140px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(116,198,157,.18), transparent 68%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.hero-orbit-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(360px, 82%);
+  height: 224px;
+  overflow: hidden;
+  border-radius: 22px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(167,243,208,.22);
+  box-shadow:
+    0 25px 55px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.08);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transition: transform 520ms cubic-bezier(.2,.72,.2,1), opacity 360ms ease, filter 360ms ease, box-shadow 360ms ease;
+  will-change: transform;
+}
+
+.hero-orbit-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(1,12,7,.05) 18%, rgba(1,12,7,.26) 44%, rgba(1,12,7,.92) 100%),
+    linear-gradient(90deg, rgba(2,14,8,.10), transparent 48%, rgba(2,14,8,.20));
+  pointer-events: none;
+}
+
+.hero-orbit-card.is-side {
+  filter: saturate(.84) brightness(.78);
+}
+
+.hero-orbit-card.is-active {
+  border-color: rgba(167,243,208,.34);
+  box-shadow:
+    0 30px 70px rgba(0,0,0,.42),
+    0 0 36px rgba(82,183,136,.12),
+    inset 0 1px 0 rgba(255,255,255,.10);
+}
+
+.hero-orbit-card-top,
+.hero-orbit-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-orbit-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 14px 0;
+  color: #B7E4C7;
+}
+
+.hero-orbit-live-pill {
+  padding: 4px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(116,198,157,.22);
+  background: rgba(3,18,11,.46);
+  color: #8CE1AF;
+  font-size: .50rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.hero-orbit-card-content {
+  position: absolute;
+  inset: auto 14px 13px;
+}
+
+.hero-orbit-area {
+  display: block;
+  margin-bottom: 4px;
+  color: #95D5B2;
+  font-size: .56rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.hero-orbit-card h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.08rem;
+  letter-spacing: -.025em;
+}
+
+.hero-orbit-card p {
+  margin: 4px 0 8px;
+  max-width: 90%;
+  color: #C7E9D2;
+  font-size: .65rem;
+  line-height: 1.4;
+}
+
+.hero-orbit-meta {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #9FC8AE;
+  font-size: .57rem;
+  font-weight: 700;
+}
+
+.hero-orbit-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-orbit-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 9px;
+  padding: 6px 9px;
+  border-radius: 9px;
+  color: #082315;
+  background: linear-gradient(135deg,#D8F3DC,#A7F3D0);
+  font-size: .61rem;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
+.hero-orbit-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 8;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  border: 1px solid rgba(149,213,178,.20);
+  border-radius: 50%;
+  color: #D8F3DC;
+  background: rgba(2,16,9,.74);
+  box-shadow: 0 10px 22px rgba(0,0,0,.20);
+  cursor: pointer;
+}
+
+.hero-orbit-arrow:hover {
+  border-color: rgba(167,243,208,.46);
+  background: rgba(10,38,23,.90);
+  color: #A7F3D0;
+}
+
+.hero-orbit-arrow-left { left: 4px; }
+.hero-orbit-arrow-right { right: 4px; }
+
+.hero-orbit-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: -2px;
+}
+
+.hero-orbit-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(149,213,178,.24);
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+.hero-orbit-dots button.active {
+  width: 22px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#52B788,#A7F3D0);
+  box-shadow: 0 0 10px rgba(82,183,136,.24);
+}
+
+@media (max-width: 1024px) {
+  .hero-orbit-showcase {
+    min-height: 540px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-orbit-showcase {
+    min-height: 520px !important;
+    padding: 18px !important;
+  }
+
+  .hero-showcase-topline {
+    align-items: flex-start;
+  }
+
+  .hero-showcase-status {
+    font-size: .57rem;
+    padding: 6px 9px;
+  }
+
+  .hero-orbit-stage-shell {
+    height: 250px;
+  }
+
+  .hero-orbit-card {
+    width: 78%;
+    height: 210px;
+  }
+
+  .hero-orbit-card.is-side {
+    opacity: .28 !important;
+  }
+
+  .hero-orbit-card.is-side {
+    transform: translate(-50%, -50%) translate3d(-34%, 8px, -60px) rotateY(12deg) scale(.72) !important;
+  }
+
+  .hero-orbit-card:nth-of-type(4).is-side {
+    transform: translate(-50%, -50%) translate3d(34%, 8px, -60px) rotateY(-12deg) scale(.72) !important;
+  }
+
+  .hero-orbit-arrow-left { left: 0; }
+  .hero-orbit-arrow-right { right: 0; }
+
+  .hero-orbit-copy p {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-showcase-brand p,
+  .hero-showcase-brand-title span {
+    display: none;
+  }
+
+  .hero-showcase-brand-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-orbit-stage-shell {
+    height: 230px;
+  }
+
+  .hero-orbit-card {
+    width: 80%;
+    height: 194px;
+  }
+
+  .hero-orbit-copy h3 {
+    font-size: 1.36rem;
+  }
+
+  .hero-orbit-copy p {
+    font-size: .64rem;
+  }
+
+  .hero-scene-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-orbit-stage,
+  .hero-orbit-card,
+  .hero-orbit-dots button {
+    transition: none !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Final requested cleanup: restore the global navbar layer, temporarily
+   restore the original hero MP4, and remove the legacy outer carousel card.
+   -------------------------------------------------------------------------- */
+.navbar-wrapper {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 2000 !important;
+  isolation: isolate;
+}
+
+/* The old image-based hero layer is no longer used; the original MP4 now
+   drives the full-section hero background again. */
+.hero-section-background-video {
+  display: block !important;
+  z-index: 0 !important;
+}
+
+/* Keep the new market orbit itself, but remove the legacy panel behind it. */
+.hero-showcase-premium.hero-orbit-showcase {
+  width: 100% !important;
+  max-width: 620px !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 6px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.hero-showcase-premium.hero-orbit-showcase::before,
+.hero-showcase-premium.hero-orbit-showcase::after {
+  display: none !important;
+}
+
+.hero-orbit-showcase .hero-showcase-topline {
+  padding: 0 6px 12px !important;
+}
+
+.hero-orbit-showcase .hero-orbit-stage-shell {
+  height: 320px !important;
+  margin: 0 !important;
+}
+
+.hero-orbit-showcase .hero-orbit-card {
+  width: min(430px, 82%) !important;
+  height: 238px !important;
+}
+
+.hero-orbit-showcase .hero-scene-grid {
+  margin-top: 2px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+@media (max-width: 768px) {
+  .hero-showcase-premium.hero-orbit-showcase {
+    max-width: 100% !important;
+    padding: 2px !important;
+  }
+
+  .hero-orbit-showcase .hero-orbit-stage-shell {
+    height: 270px !important;
+  }
+
+  .hero-orbit-showcase .hero-orbit-card {
+    width: 82% !important;
+    height: 214px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hero cleanup: remove legacy telemetry/scene controls and keep the orbit
+   compact, centered, and presentation-first.
+   -------------------------------------------------------------------------- */
+.hero-orbit-showcase {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  max-width: 640px !important;
+  margin-inline: auto;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.hero-orbit-showcase::before,
+.hero-orbit-showcase::after {
+  display: none !important;
+}
+
+.hero-orbit-copy {
+  padding: 0 0 16px !important;
+}
+
+.hero-orbit-copy h3 {
+  margin-top: 8px !important;
+  margin-bottom: 6px !important;
+}
+
+.hero-orbit-stage-shell {
+  height: 314px !important;
+  margin: 0 !important;
+}
+
+.hero-orbit-card {
+  width: min(420px, 78%) !important;
+  height: 236px !important;
+}
+
+.hero-orbit-dots {
+  margin-top: 8px !important;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.hero-content {
+  padding-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .hero-orbit-showcase {
+    max-width: 590px !important;
+  }
+
+  .hero-orbit-stage-shell {
+    height: 292px !important;
+  }
+
+  .hero-orbit-card {
+    width: min(400px, 80%) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-orbit-showcase {
+    max-width: 100% !important;
+  }
+
+  .hero-orbit-copy {
+    padding-bottom: 12px !important;
+  }
+
+  .hero-orbit-stage-shell {
+    height: 270px !important;
+  }
+
+  .hero-orbit-card {
+    width: 82% !important;
+    height: 214px !important;
+  }
+}

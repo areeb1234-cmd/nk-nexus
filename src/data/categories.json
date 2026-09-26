@@ -1,0 +1,38 @@
+[
+  {
+    "id": "all",
+    "name": "All Produce",
+    "description": "Browse our complete catalog of certified organic and regenerative produce.",
+    "icon": "Sparkles"
+  },
+  {
+    "id": "Vegetables",
+    "name": "Vegetables",
+    "description": "Heirloom nightshades, crisp roots, brassicas, and salad greens harvested daily.",
+    "icon": "Carrot"
+  },
+  {
+    "id": "Fruits",
+    "name": "Fruits",
+    "description": "Tree-ripened orchard stone fruits, berries, melons, and heirloom citrus.",
+    "icon": "Apple"
+  },
+  {
+    "id": "Herbs",
+    "name": "Herbs & Botanicals",
+    "description": "Aromatic culinary herbs, medicinal sprigs, and edible blossoms.",
+    "icon": "Leaf"
+  },
+  {
+    "id": "Dairy & Pantry",
+    "name": "Dairy & Pantry",
+    "description": "Pasture-raised farmstead cheeses, cultured butters, and organic yogurts.",
+    "icon": "Milk"
+  },
+  {
+    "id": "Artisanal Goods",
+    "name": "Artisanal Goods",
+    "description": "Raw single-origin honeys, stone-milled sourdoughs, and handcrafted staples.",
+    "icon": "Wheat"
+  }
+]

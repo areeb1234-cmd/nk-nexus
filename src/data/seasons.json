@@ -1,0 +1,50 @@
+[
+  {
+    "id": "spring",
+    "name": "Spring Awakening",
+    "months": "March – May",
+    "tagline": "Tender shoots, crisp radishes & wild alliums",
+    "palette": "#34D399",
+    "climateDescription": "Cool mornings, gentle rain showers, and the first vibrant push of tender green leaves and shoots.",
+    "featuredProduce": ["Purple Asparagus", "Sugar Snap Peas", "Crimson Radishes", "Spring Strawberries", "Baby Arugula"],
+    "recommendedMarkets": ["Riverfront Farmstead Market", "Highland Eco-Square", "Old Town Meadow Guild"],
+    "chefTip": "Gently blanch spring greens for under 90 seconds to lock in bright chlorophyll and crisp sweetness.",
+    "quote": "Spring is nature’s way of saying: let’s start fresh."
+  },
+  {
+    "id": "summer",
+    "name": "Summer Bounty",
+    "months": "June – August",
+    "tagline": "Sun-ripened nightshades, juicy stone fruits & lush herbs",
+    "palette": "#F59E0B",
+    "climateDescription": "Long sun-drenched afternoons, maximum solar energy, rich sugars accumulating in vine-ripened produce.",
+    "featuredProduce": ["Heirloom Beefsteak Tomatoes", "Fresh Genovese Basil", "Black Mission Figs", "English Cucumbers", "Spotted Watermelon", "Valencia Oranges"],
+    "recommendedMarkets": ["Green Valley Farmers Market", "Bayside Organic Pavilion", "Skyline Organic Fair"],
+    "chefTip": "Never refrigerate warm heirloom tomatoes—keep them on the countertop to retain volatile aromatic esters.",
+    "quote": "Summer is a feast of color, aroma, and vitality."
+  },
+  {
+    "id": "autumn",
+    "name": "Autumn Harvest",
+    "months": "September – November",
+    "tagline": "Dense squashes, crisp orchard apples & forest fungi",
+    "palette": "#EA580C",
+    "climateDescription": "Crisp morning frosts that concentrate sugars in cold-hardy brassicas and deep root vegetables.",
+    "featuredProduce": ["Rainbow Bunch Carrots", "Crisp Gala Apples", "Wild Forest Mushrooms", "Kabocha Squash", "Crisp Romanesco Broccoli", "Golden Beets"],
+    "recommendedMarkets": ["Cedar Ridge Harvest Bazaar", "Timberline Hill Market", "Old Town Meadow Guild", "Pinecrest Sustainable Agora"],
+    "chefTip": "Roast winter squashes with skin on; heirloom varieties like Delicata develop deeply caramelized edges.",
+    "quote": "Autumn is the golden treasury of the grower's year."
+  },
+  {
+    "id": "winter",
+    "name": "Winter Cellar",
+    "months": "December – February",
+    "tagline": "Frost-kissed kales, citrus groves & hearty roots",
+    "palette": "#0284C7",
+    "climateDescription": "Chilly weather that triggers starches to convert to natural protective sugars inside hardy greens and roots.",
+    "featuredProduce": ["Tuscan Lacinato Kale", "Meyer Lemons", "Sweet Japanese Sweet Potatoes", "Microgreen Medley", "Artisanal Goat Chevre"],
+    "recommendedMarkets": ["Pacific Grove Farmers Collective", "Bayside Organic Pavilion", "Pinecrest Sustainable Agora"],
+    "chefTip": "Massage lacinato kale with a pinch of sea salt and lemon juice 10 minutes prior to serving to soften cell walls.",
+    "quote": "Winter nurtures quiet strength and concentrated sweetness."
+  }
+]

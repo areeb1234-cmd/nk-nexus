@@ -1,0 +1,28 @@
+/* FreshFind additive interaction polish.
+   This file intentionally contains enhancement-only selectors. */
+
+/* Preserve existing card layouts while making their interaction feel more tactile. */
+.market-card,
+.produce-card {
+  transform-origin: center center;
+}
+
+/* Make clickable card links feel responsive without changing their destination. */
+.market-card-title a,
+.nav-links a,
+.mobile-nav-panel a,
+.footer-link {
+  text-underline-offset: 3px;
+}
+
+/* Touch devices should remain stable: no hover-only movement is forced. */
+@media (hover: none), (pointer: coarse) {
+  .market-card:hover,
+  .produce-card:hover,
+  .btn:hover,
+  .nav-action-btn:hover,
+  .filter-tab-btn:hover,
+  .market-card-fav-btn:hover {
+    transform: none;
+  }
+}

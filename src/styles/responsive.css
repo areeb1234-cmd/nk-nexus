@@ -1,0 +1,314 @@
+/* ==========================================================================
+   FreshFind - Responsive Design Stylesheets
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Reusable responsive two-column split grids (replaces one-off inline
+   gridTemplateColumns declarations scattered across pages so they can
+   actually collapse to a single column on narrow viewports).
+   -------------------------------------------------------------------------- */
+.split-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.split-grid-even {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.split-grid-wide {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .split-grid,
+  .split-grid-even,
+  .split-grid-wide {
+    grid-template-columns: 1fr;
+  }
+}
+
+.scene-jump-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-badge-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 480px) {
+  .scene-jump-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-badge-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fixed-height hero/banner images shrink on smaller viewports so they
+   don't eat the whole screen on phones. */
+.market-hero-banner {
+  height: 420px;
+}
+
+@media (max-width: 768px) {
+  .market-hero-banner {
+    height: 280px;
+  }
+
+  .market-hero-banner h1 {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .market-hero-banner {
+    height: 220px;
+  }
+
+  .market-hero-banner > div {
+    padding: 20px !important;
+  }
+
+  .responsive-feature-img {
+    height: 220px !important;
+  }
+}
+
+/* Global overflow safety net: nothing should be able to force horizontal
+   scroll on narrow viewports (long words, fixed-width children, etc). */
+html, body {
+  max-width: 100vw;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}
+
+/* Large Tablets & Desktops (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-3d-wrapper {
+    height: 400px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .discovery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+/* Medium Tablets & Mobile Screens (<= 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: rgba(13, 40, 24, 0.05);
+  }
+
+  .mobile-nav-panel {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--surface-card);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: var(--shadow-card-hover);
+    z-index: 999;
+  }
+
+  .mobile-nav-panel a {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .grid-3, .grid-4, .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .discovery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-headline {
+    font-size: 2.25rem;
+  }
+
+  .hero-metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .chatbot-window {
+    right: 12px;
+    left: 12px;
+    width: auto;
+    bottom: 84px;
+    height: 480px;
+  }
+
+  .drawer-panel {
+    max-width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .hero-scroll-deck {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .deck-items-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .fullscreen-3d-dock {
+    bottom: 16px !important;
+    right: 12px !important;
+    left: 12px !important;
+    justify-content: space-between !important;
+    padding: 6px 10px !important;
+  }
+
+  .scroll-3d-hud {
+    bottom: 16px !important;
+    left: 12px !important;
+    right: 12px !important;
+    max-width: calc(100vw - 24px);
+    justify-content: space-between;
+    padding: 8px 12px !important;
+  }
+
+  .hero-video-card {
+    min-height: auto !important;
+    padding: 18px !important;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .hero-headline {
+    font-size: 1.875rem;
+  }
+
+  .hero-3d-wrapper {
+    height: 320px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .modal-box {
+    padding: 20px;
+  }
+
+  .navbar-inner {
+    gap: 8px;
+  }
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .nav-action-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-brand-badge,
+  .nav-brand-tagline {
+    display: none;
+  }
+}
+
+/* Extra-small phones: trim the navbar brand block down to just the logo +
+   name so it never collides with the action buttons, and collapse the
+   sign-in button to an icon only. */
+@media (max-width: 380px) {
+  .nav-brand-tagline,
+  .nav-brand-badge {
+    display: none;
+  }
+
+  .nav-signin-label {
+    display: none;
+  }
+}
+
+.market-card-reveal,
+.produce-card-reveal {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container-wide,
+  .container-narrow {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .hero-grid {
+    gap: 28px;
+  }
+}
